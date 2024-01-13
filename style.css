@@ -14,11 +14,18 @@
     cursor: pointer;
 }
 
+.section-title {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
 .section-description {
-    color:#727272;
+    color: #727272;
     font-size: 1rem;
     font-weight: 400;
 }
+
 /* Header part Style */
 header {
     background: rgba(255, 144, 14, 0.10);
@@ -98,28 +105,83 @@ main {
     padding-right: 70px;
 }
 
-.teams-title {
-    font-size: 2.8rem;
-}
 
 
-.teams-title .quick-list {
+.section-title .quick-list {
     color: #727272;
     font-weight: 500;
 }
 
-.teams-title .text-features {
+.section-title .text-features {
     color: #FF900E;
     font-weight: 700;
 }
 
-.feature{
+
+/* Features Style */
+.feature {
     display: flex;
+    gap: 8.75rem;
+    margin-top: 130px;
 }
+
+.feature-title {
+    padding: 0 30px;
+    max-width: 29rem;
+    border-left: 5px solid #FF900E;
+}
+
+.feature-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card {
+    padding: 30px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.card-title {
+    color: #131313;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.feature-img{
+    position: relative;
+}
+
+.feature-badges {
+    width: 18.7rem;
+    text-align: center;
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 45px;
+    position: absolute;
+    bottom:50px;
+    left: -80px;
+}
+.feature-badges h1 {
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0px;
+}
+.feature-badges p {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0px;
+}
+
 
 
 /* Responsive Style */
 @media screen and (max-width: 576px) {
+
     /* Header part */
     header {
         padding: 20px;
@@ -138,9 +200,10 @@ main {
     }
 
     /* Teams Section */
-    .teams{
+    .teams {
         flex-direction: column;
     }
+
     .teams-img-container {
         grid-template-columns: 1fr;
     }
@@ -148,6 +211,7 @@ main {
 
 /* Tablet or medium device */
 @media screen and (min-width: 576px) and (max-width: 960px) {
+
     /* Header part */
     header {
         padding: 50px;
@@ -164,8 +228,9 @@ main {
     nav li {
         margin: 1rem;
     }
+
     /* Teams Section */
-    .teams{
+    .teams {
         flex-direction: column;
     }
 }
